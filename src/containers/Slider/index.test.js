@@ -55,6 +55,7 @@ describe("When a page is created", () => {
     render(<Slider />);
     const SlideCardList = screen.findByTestId("testSlideCardList");
     expect(SlideCardList).toBeDefined();
+
   })
 
 
