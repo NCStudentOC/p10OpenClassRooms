@@ -24,3 +24,22 @@ describe("When Menu is created", () => {
     });
   });
 });
+
+
+// Ajout d'un test fonctionnel
+
+describe("Menu", () => {
+  it("should redirect to '#contact' upon clicking the 'Contact' button", () => {
+    const { getByText } = render(<Menu />
+    );
+    // Simule un click sur le bouton contact
+    fireEvent.click(getByText(/Contact/i));
+
+
+    // Verifie sa redirection
+    expect(window.location.hash).toEqual("#contact");
+
+  })
+
+})
+
